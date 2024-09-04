@@ -26,8 +26,8 @@ If you are running Ubuntu, then
 Please note the first paragraph above.
 
 For all distros:
-git clone https://github.com/lwfinger/rtlwifi_new.git -b extended
-cd rtlwifi_new
+git clone https://github.com/KrishJain256/Realtek-8723-Wifi-Drivers
+cd Realtek-8723-Wifi-Drivers
 make
 sudo make install
 sudo modprobe -r <<YOUR WIRELESS DRIVER CODE>>
@@ -55,10 +55,8 @@ If the signal for the AP to which you wish to connect is -60 or less, then you h
 The fix is to supply the "ant_sel" option. Run the following commands (set 2):
 
 sudo su -
-echo "options rtl8723de ant_sel=2" > /etc/modprobe.d/50-rtl8723de.conf
+echo "options rtl8723de ant_sel=2" > /etc/modprobe.d/50-rtl8723be.conf
 exit
-
-If you have an RTL8723DE, make the appropriate adjustments to the above command.
 
 At this point, do a complete shutdown! The device may retain the old setting with a warm reboot.
 To be safe, do a power off. After the system come back up, rerun the set 1 comamands again. If
