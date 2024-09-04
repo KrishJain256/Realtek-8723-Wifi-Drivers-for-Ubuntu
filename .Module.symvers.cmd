@@ -1,0 +1,1 @@
+cmd_/home/krish/rtlwifi_own/Module.symvers := sed 's/\.ko$$/\.o/' /home/krish/rtlwifi_own/modules.order | scripts/mod/modpost -m -a  -o /home/krish/rtlwifi_own/Module.symvers -e -i Module.symvers   -T -
