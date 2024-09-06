@@ -37,8 +37,7 @@ sudo vim /etc/modprobe.d/<<YOUR WIRELESS DRIVER CODE>>.conf
 There, enter the line below:
 `options <<YOUR WIRELESS DRIVER CODE>> <<driver_option_name>>=<value>`
 
-The ONLY option you are likely to need is "ant_sel". The penny-pinchers at some laptop vendors,
-mostly HP, decided to save a few cents to install only one antenna. That would not have been a
+The ONLY option you are likely to need is "ant_sel". Some laptop brands (especially in HP), the laptops have only one antenna. That would not have been a
 problem as the driver contains the logic necessary to handle this case; however,it is not correctly encoded in the device's ROM. Accordingly, the driver follow
 the ROM setting and uses the WRONG antenna. Effectively, the device has NO usable antennas. To test
 if this is the case on your system, please run the following commands (set 1):
